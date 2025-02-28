@@ -1,0 +1,75 @@
+## Test Invalid orderId Length
+
+mutation testInvalidOrderIdLength {
+    createMultiplePayments(createMultiplePaymentsData: {
+        payments: [
+            { orderId: "O", amount: 100.00, method: "credit_card", description: "Payment for order ORD001" },  # Invalid orderId
+            { orderId: "ORD002", amount: 150.00, method: "paypal", description: "Payment for order ORD002" },
+            { orderId: "ORD003", amount: 200.00, method: "bank_transfer", description: "Payment for order ORD003" },
+            { orderId: "ORD004", amount: 250.00, method: "credit_card", description: "Payment for order ORD004" },
+            { orderId: "ORD005", amount: 300.00, method: "credit_card", description: "Payment for order ORD005" },
+            { orderId: "ORD006", amount: 350.00, method: "paypal", description: "Payment for order ORD006" },
+            { orderId: "ORD007", amount: 400.00, method: "bank_transfer", description: "Payment for order ORD007" },
+            { orderId: "ORD008", amount: 450.00, method: "credit_card", description: "Payment for order ORD008" },
+            { orderId: "ORD009", amount: 500.00, method: "credit_card", description: "Payment for order ORD009" },
+            { orderId: "ORD010", amount: 550.00, method: "paypal", description: "Payment for order ORD010" }
+        ]
+    }) {
+        id
+        orderId
+        amount
+        method
+        description
+        createdAt
+    }
+}
+
+##  Test Invalid method Length
+mutation testInvalidMethodLength {
+    createMultiplePayments(createMultiplePaymentsData: {
+        payments: [
+            { orderId: "ORD001", amount: 100.00, method: "cc", description: "Payment for order ORD001" },  # Invalid method
+            { orderId: "ORD002", amount: 150.00, method: "paypal", description: "Payment for order ORD002" },
+            { orderId: "ORD003", amount: 200.00, method: "bank_transfer", description: "Payment for order ORD003" },
+            { orderId: "ORD004", amount: 250.00, method: "credit_card", description: "Payment for order ORD004" },
+            { orderId: "ORD005", amount: 300.00, method: "credit_card", description: "Payment for order ORD005" },
+            { orderId: "ORD006", amount: 350.00, method: "paypal", description: "Payment for order ORD006" },
+            { orderId: "ORD007", amount: 400.00, method: "bank_transfer", description: "Payment for order ORD007" },
+            { orderId: "ORD008", amount: 450.00, method: "credit_card", description: "Payment for order ORD008" },
+            { orderId: "ORD009", amount: 500.00, method: "credit_card", description: "Payment for order ORD009" },
+            { orderId: "ORD010", amount: 550.00, method: "paypal", description: "Payment for order ORD010" }
+        ]
+    }) {
+        id
+        orderId
+        amount
+        method
+        description
+        createdAt
+    }
+}
+
+## Test Invalid description Length
+mutation testInvalidDescriptionLength {
+    createMultiplePayments(createMultiplePaymentsData: {
+        payments: [
+            { orderId: "ORD001", amount: 100.00, method: "credit_card", description: "This description is way too long and exceeds the maximum length of one hundred characters, which is not allowed." },  # Invalid description
+            { orderId: "ORD002", amount: 150.00, method: "paypal", description: "Payment for order ORD002" },
+            { orderId: "ORD003", amount: 200.00, method: "bank_transfer", description: "Payment for order ORD003" },
+            { orderId: "ORD004", amount: 250.00, method: "credit_card", description: "Payment for order ORD004" },
+            { orderId: "ORD005", amount: 300.00, method: "credit_card", description: "Payment for order ORD005" },
+            { orderId: "ORD006", amount: 350.00, method: "paypal", description: "Payment for order ORD006" },
+            { orderId: "ORD007", amount: 400.00, method: "bank_transfer", description: "Payment for order ORD007" },
+            { orderId: "ORD008", amount: 450.00, method: "credit_card", description: "Payment for order ORD008" },
+            { orderId: "ORD009", amount: 500.00, method: "credit_card", description: "Payment for order ORD009" },
+            { orderId: "ORD010", amount: 550.00, method: "paypal", description: "Payment for order ORD010" }
+        ]
+    }) {
+        id
+        orderId
+        amount
+        method
+        description
+        createdAt
+    }
+}

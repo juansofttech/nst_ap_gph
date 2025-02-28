@@ -1,0 +1,148 @@
+[Manual GraphTEST]
+
+## Mutation to Create a New Resource 
+
+mutation {
+    createPayment(input: {
+        orderId: "ORD12345",
+        amount: 100.50,
+        method: "credit_card",
+        description: "Payment for order ORD12345"
+    }) {
+        id
+        orderId
+        amount
+        method
+        description
+        createdAt
+    }
+}
+
+query {
+    getPayments {
+        id
+        orderId
+        amount
+        method
+        description
+        createdAt
+    }
+}
+
+
+########
+
+
+Query to Retrieve a Specific Payment by ID
+query {
+    getPayment(id: 1) {
+        id
+        orderId
+        amount
+        method
+        description
+        createdAt
+    }
+}
+
+
+# Mutation to create multiple payments
+
+mutation {
+    createMultiplePayments(createMultiplePaymentsData: {
+        payments: [
+            { orderId: "ORD001", amount: 100.00, method: "credit_card", description: "Payment for order ORD001" },
+            { orderId: "ORD002", amount: 150.00, method: "paypal", description: "Payment for order ORD002" },
+            { orderId: "ORD003", amount: 200.00, method: "bank_transfer", description: "Payment for order ORD003" },
+            { orderId: "ORD004", amount: 250.00, method: "credit_card", description: "Payment for order ORD004" },
+            { orderId: "ORD005", amount: 300.00, method: "credit_card", description: "Payment for order ORD005" },
+            { orderId: "ORD006", amount: 350.00, method: "paypal", description: "Payment for order ORD006" },
+            { orderId: "ORD007", amount: 400.00, method: "bank_transfer", description: "Payment for order ORD007" },
+            { orderId: "ORD008", amount: 450.00, method: "credit_card", description: "Payment for order ORD008" },
+            { orderId: "ORD009", amount: 500.00, method: "credit_card", description: "Payment for order ORD009" },
+            { orderId: "ORD010", amount: 550.00, method: "paypal", description: "Payment for order ORD010" }
+        ]
+    }) {
+        id
+        orderId
+        amount
+        method
+        description
+        createdAt
+    }
+}
+
+# DELETE IN BASH
+
+mutation {
+    deleteMultiplePayments(deleteMultiplePaymentsData: {
+        ids: [
+            "1", 
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+        ]
+    }) {
+        id
+        orderId
+        amount
+        method
+        description
+        createdAt
+    }
+}
+ ##### DELETE RECORD IN BACH MODE 
+
+ mutation {
+    deleteMultiplePayments(deleteMultiplePaymentsData: {
+        ids: [
+            "11", 
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+        ]
+    }) {
+        id
+        orderId
+        amount
+        method
+        description
+        createdAt
+    }
+}
+
+
+
+

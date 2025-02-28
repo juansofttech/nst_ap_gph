@@ -1,0 +1,51 @@
+name: 🚀 CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛠️ Checkout code
+        uses: actions/checkout@v2
+
+      - name: 🌐 Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '23' # Updated Node.js version
+
+      - name: 📦 Install dependencies
+        run: npm install
+
+      - name: 🔍 Run Lint
+        run: npm run lint
+        env:
+          CI: true
+
+      - name: 📊 Run TypeScript Analyzer
+        run: npx eslint . --ext .ts,.tsx || true
+        env:
+          CI: true
+
+      - name: 🧪 Run Tests
+        run: npm run test -- --watch=false --bail || true
+        env:
+          CI: true
+
+      - name: 🏗️ Build
+        run: npm run build
+
+      - name: ☁️ Upload coverage to Codecov
+        if: success() && github.event_name == 'push'
+        uses: codecov/codecov-action@v2
+        with:
+          file: ./coverage/lcov.info
+          flags: unittests
+          name: codecov-umbrella

@@ -1,0 +1,142 @@
+### --------------------------------
+Get
+### --------------------------------
+
+query {
+  getOrders {
+    id
+    productId
+    customerName
+    quantity
+    price
+    status
+  }
+}
+
+### --------------------------------
+CREATE
+### --------------------------------
+
+
+mutation {
+  createOrder(order: {
+    productId: 1,
+    customerName: "Alice",
+    quantity: 3,
+    price: 150,
+    status: "pending"
+  }) {
+    id
+    productId
+    customerName
+    quantity
+    price
+    status
+  }
+}
+
+### --------------------------------
+UPDATE
+### --------------------------------
+
+mutation {
+  updateOrder(id: 1, order: {
+    productId: 1,
+    customerName: "Alice Updated",
+    quantity: 5,
+    price: 200,
+    status: "completed"
+  }) {
+    id
+    productId
+    customerName
+    quantity
+    price
+    status
+  }
+}
+
+
+### --------------------------------
+### --------------------------------
+
+
+
+
+
+
+
+query {
+  orders {
+    id
+    product
+    quantity
+    price
+    status
+  }
+}
+### --------------------------------
+### --------------------------------
+query {
+  order(id: 1) {  // Replace 1 with the actual ID you want to query
+    id
+    product
+    quantity
+    price
+    status
+  }
+}
+
+### --------------------------------
+Mutation to create a new order:
+### --------------------------------
+
+mutation {
+  createOrder(createOrderInput: { 
+    product: "Product Name", 
+    quantity: 2, 
+    price: 29.99, 
+    status: "Pending" 
+  }) {
+    id
+    product
+    quantity
+    price
+    status
+  }
+}
+
+### --------------------------------
+Mutation to delete an order:
+### --------------------------------
+
+mutation {
+  removeOrder(id: 1) {  // Replace 1 with the actual ID you want to delete
+    id
+  }
+}
+
+
+mutation {
+  deleteOrder(id: 1) { // Replace 1 with the actual ID you want to delete
+    id
+  }
+}
+
+### --------------------------------
+Mutation to update an order:
+### --------------------------------
+
+
+mutation {
+  updateOrder(id: 1, order: { // Replace 1 with the actual ID you want to update
+    productId: 2,            // New product ID
+    customerName: "Bob",     // New customer name
+    quantity: 5               // New quantity
+  }) {
+    id
+    productId
+    customerName
+    quantity
+  }
+}

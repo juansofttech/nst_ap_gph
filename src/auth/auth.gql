@@ -1,0 +1,17 @@
+
+# login
+mutation {
+  login(email: "lnxs@example.com", password: "securepassword") {
+    access_token
+  }
+}
+
+# response
+
+{
+  "data": {
+    "login": {
+      "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsImVtYWlsIjoibG54c0BleGFtcGxlLmNvbSIsImlhdCI6MTczOTQyODE4MSwiZXhwIjoxNzM5NDI4MjQxfQ.qA7ALGYIO8rn3gN7VlVsJEXyL8j5kBOS4jxZjClSHWk"
+    }
+  }
+}

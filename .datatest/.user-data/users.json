@@ -1,0 +1,279 @@
+{
+    "users": [
+        {
+            "email": "sophia.johnson@example.com",
+            "password": "password1",
+            "firstName": "Sophia",
+            "lastName": "Johnson",
+            "city": "New York",
+            "country": "USA",
+            "phoneNumber": "1234567890",
+            "latitude": 40.7128,
+            "longitude": -74.0060
+        },
+        {
+            "email": "isabella.smith@example.com",
+            "password": "password2",
+            "firstName": "Isabella",
+            "lastName": "Smith",
+            "city": "Los Angeles",
+            "country": "USA",
+            "phoneNumber": "0987654321",
+            "latitude": 34.0522,
+            "longitude": -118.2437
+        },
+        {
+            "email": "mia.brown@example.com",
+            "password": "password3",
+            "firstName": "Mia",
+            "lastName": "Brown",
+            "city": "Medellín",
+            "country": "Colombia",
+            "phoneNumber": "1122334455",
+            "latitude": 6.2442,
+            "longitude": -75.5812
+        },
+        {
+            "email": "ava.garcia@example.com",
+            "password": "password4",
+            "firstName": "Ava",
+            "lastName": "Garcia",
+            "city": "Sydney",
+            "country": "Australia",
+            "phoneNumber": "2233445566",
+            "latitude": -33.8688,
+            "longitude": 151.2093
+        },
+        {
+            "email": "olivia.martinez@example.com",
+            "password": "password5",
+            "firstName": "Olivia",
+            "lastName": "Martinez",
+            "city": "Medellín",
+            "country": "Colombia",
+            "phoneNumber": "3344556677",
+            "latitude": 6.2442,
+            "longitude": -75.5812
+        },
+        {
+            "email": "emma.rodriguez@example.com",
+            "password": "password6",
+            "firstName": "Emma",
+            "lastName": "Rodriguez",
+            "city": "Melbourne",
+            "country": "Australia",
+            "phoneNumber": "4455667788",
+            "latitude": -37.8136,
+            "longitude": 144.9631
+        },
+        {
+            "email": "charlotte.jones@example.com",
+            "password": "password7",
+            "firstName": "Charlotte",
+            "lastName": "Jones",
+            "city": "Berlin",
+            "country": "Germany",
+            "phoneNumber": "5566778899",
+            "latitude": 52.5200,
+            "longitude": 13.4050
+        },
+        {
+            "email": "amelia.taylor@example.com",
+            "password": "password8",
+            "firstName": "Amelia",
+            "lastName": "Taylor",
+            "city": "Brisbane",
+            "country": "Australia",
+            "phoneNumber": "6677889900",
+            "latitude": -27.4698,
+            "longitude": 153.0251
+        },
+        {
+            "email": "harper.wilson@example.com",
+            "password": "password9",
+            "firstName": "Harper",
+            "lastName": "Wilson",
+            "city": "Moscow",
+            "country": "Russia",
+            "phoneNumber": "7788990011",
+            "latitude": 55.7558,
+            "longitude": 37.6173
+        },
+        {
+            "email": "ella.moore@example.com",
+            "password": "password10",
+            "firstName": "Ella",
+            "lastName": "Moore",
+            "city": "Beijing",
+            "country": "China",
+            "phoneNumber": "8899001122",
+            "latitude": 39.9042,
+            "longitude": 116.4074
+        },
+        {
+            "email": "chloe.clark@example.com",
+            "password": "password12",
+            "firstName": "Chloe",
+            "lastName": "Clark",
+            "city": "Miami",
+            "country": "USA",
+            "phoneNumber": "1011121314",
+            "latitude": 25.7617,
+            "longitude": -80.1918
+        },
+        {
+            "email": "lily.lewis@example.com",
+            "password": "password13",
+            "firstName": "Lily",
+            "lastName": "Lewis",
+            "city": "Medellín",
+            "country": "Colombia",
+            "phoneNumber": "1213141516",
+            "latitude": 6.2442,
+            "longitude": -75.5812
+        },
+        {
+            "email": "aria.walker@example.com",
+            "password": "password14",
+            "firstName": "Aria",
+            "lastName": "Walker",
+            "city": "Chicago",
+            "country": "USA",
+            "phoneNumber": "1314151617",
+            "latitude": 41.8781,
+            "longitude": -87.6298
+        },
+        {
+            "email": "scarlett.hall@example.com",
+            "password": "password15",
+            "firstName": "Scarlett",
+            "lastName": "Hall",
+            "city": "Medellín",
+            "country": "Colombia",
+            "phoneNumber": "1415161718",
+            "latitude": 6.2442,
+            "longitude": -75.5812
+        },
+        {
+            "email": "zoe.allen@example.com",
+            "password": "password16",
+            "firstName": "Zoe",
+            "lastName": "Allen",
+            "city": "San Francisco",
+            "country": "USA",
+            "phoneNumber": "1516171819",
+            "latitude": 37.7749,
+            "longitude": -122.4194
+        },
+        {
+            "email": "layla.young@example.com",
+            "password": "password17",
+            "firstName": "Layla",
+            "lastName": "Young",
+            "city": "Medellín",
+            "country": "Colombia",
+            "phoneNumber": "1617181920",
+            "latitude": 6.2442,
+            "longitude": -75.5812
+        },
+        {
+            "email": "nora.king@example.com",
+            "password": "password18",
+            "firstName": "Nora",
+            "lastName": "King",
+            "city": "Seattle",
+            "country": "USA",
+            "phoneNumber": "1718192021",
+            "latitude": 47.6062,
+            "longitude": -122.3321
+        },
+        {
+            "email": "samantha.wright@example.com",
+            "password": "password19",
+            "firstName": "Samantha",
+            "lastName": "Wright",
+            "city": "Medellín",
+            "country": "Colombia",
+            "phoneNumber": "1819202122",
+            "latitude": 6.2442,
+            "longitude": -75.5812
+        },
+        {
+            "email": "samantha.wright@example.com",
+            "password": "password19",
+            "firstName": "Samantha",
+            "lastName": "Wright",
+            "city": "Cali",
+            "country": "Colombia",
+            "phoneNumber": "1819202122",
+            "latitude": 6.2442,
+            "longitude": -75.5812
+        },
+        {
+            "email": "juanita.wright@example.com",
+            "password": "password19",
+            "firstName": "Samantha",
+            "lastName": "Wright",
+            "city": "Pereira",
+            "country": "Colombia",
+            "phoneNumber": "1819202122",
+            "latitude": 6.2442,
+            "longitude": -75.5812
+        },
+        {
+            "email": "hannah.scott@example.com",
+            "password": "password20",
+            "firstName": "Hannah",
+            "lastName": "Scott",
+            "city": "Brisbane",
+            "country": "Australia",
+            "phoneNumber": "1920212223",
+            "latitude": -27.4698,
+            "longitude": 153.0251
+        },
+        {
+            "email": "aaliyah.green@example.com",
+            "password": "password21",
+            "firstName": "Aaliyah",
+            "lastName": "Green",
+            "city": "Medellín",
+            "country": "Colombia",
+            "phoneNumber": "2021222324",
+            "latitude": 6.2442,
+            "longitude": -75.5812
+        },
+        {
+            "email": "camila.adams@example.com",
+            "password": "password22",
+            "firstName": "Camila",
+            "lastName": "Adams",
+            "city": "Sydney",
+            "country": "Australia",
+            "phoneNumber": "2122232425",
+            "latitude": -33.8688,
+            "longitude": 151.2093
+        },
+        {
+            "email": "mia.brown@example.com",
+            "password": "password2",
+            "firstName": "Mia",
+            "lastName": "Brown",
+            "city": "Medellín",
+            "country": "Colombia",
+            "phoneNumber": "1122334455",
+            "latitude": 6.2442,
+            "longitude": -75.5812
+        },
+        {
+            "email": "ava.garcia@example.com",
+            "password": "password3",
+            "firstName": "Ava",
+            "lastName": "Garcia",
+            "city": "Sydney",
+            "country": "Australia",
+            "phoneNumber": "2233445566",
+            "latitude": -33.8688,
+            "longitude": 151.2093
+        }
+    ]
+}

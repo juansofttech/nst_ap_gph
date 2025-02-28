@@ -1,0 +1,9 @@
+# Mutation
+
+mutation {
+    createCategory(name: "Electronics", description: "Devices and gadgets") {
+        id
+        name
+        description
+    }
+}
